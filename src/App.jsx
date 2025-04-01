@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div> 
     <TechnicalLandingPage/>
+    <div className='p-6'></div>
     <EnvironmentLandingPage/>
     </div>
   )

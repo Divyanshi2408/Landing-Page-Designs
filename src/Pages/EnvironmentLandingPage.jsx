@@ -43,19 +43,19 @@
 
 import React from 'react'
 import l1 from "../assets/l1.png";
-import bg2 from "../assets/bg2.png";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import l3 from "../assets/l3.png";
+import bg4 from "../assets/bg4.png";
 
 const EnvironmentLandingPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 bg-cover bg-center w-full" style={{ backgroundImage: `url(${bg2})` }}>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 bg-cover bg-center w-full" style={{ backgroundImage: `url(${bg4})` }}>
       <div className="w-full flex flex-col md:flex-row items-center justify-center min-h-[80vh] max-w-6xl mx-auto p-4">
         <div className="md:w-1/2 text-center md:text-left space-y-8 p-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">
-            <span className="text-[#C5B2DC]">Dive </span>Into The Depths<br /> Of <span className="text-[#C5B2DC] text-5xl md:text-6xl">Virtual Reality</span>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+          Plants make a positive impact on your environment.
           </h1>
-          <p className="text-white text-lg">
-            Experience the limitless possibilities of Virtual Reality as you immerse yourself in breathtaking digital worlds. Dive deep into a realm where imagination meets innovation!
+          <p className="text-gray-500 text-lg">
+          Provide your house & office space with the right plants and let our plant care team keep them flourishing.
           </p>
           <button
             className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700"
@@ -69,6 +69,13 @@ const EnvironmentLandingPage = () => {
         <div className="md:w-1/2 flex justify-center p-4">
           <img 
             src={l1}
+            alt="Landing Page" 
+            className="rounded-lg shadow-lg max-w-full h-auto object-contain"
+          />
+        </div>
+        <div className="flex justify-center min-h-[20vh] max-w-5xl mx-auto p-4">
+          <img 
+            src={l3}
             alt="Landing Page" 
             className="rounded-lg shadow-lg max-w-full h-auto object-contain"
           />
