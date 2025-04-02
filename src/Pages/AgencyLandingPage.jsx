@@ -1,4 +1,11 @@
 import React from "react";
+import im1 from "../assets/im1.avif";
+import im2 from "../assets/im2.jpg";
+import im3 from "../assets/im3.jpg";
+import im4 from "../assets/im4.avif";
+import im5 from "../assets/im5.jpg";
+import im6 from "../assets/im6.jpg";
+import im7 from "../assets/im7.jpg";
 
 const HeroSection = () => {
   return (
@@ -28,14 +35,14 @@ const HeroSection = () => {
 
         {/* Image Grid Section */}
         <div className="grid grid-cols-3 grid-rows-3 gap-3 md:gap-4">
-          <img src="/image1.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image2.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image3.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image4.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image5.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image6.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image6.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
-          <img src="/image6.jpg" alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im1}alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im2} alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im3} alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im4} alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im5} alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im6} alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+          <img src={im7} alt="" className="rounded-xl object-cover w-full h-full row-span-3" />
+       
         </div>
       </div>
     </div>
