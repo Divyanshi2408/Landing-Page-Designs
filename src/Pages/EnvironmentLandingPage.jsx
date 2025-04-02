@@ -1,90 +1,143 @@
-// import React from 'react';
+// import React from 'react'
 // import l1 from "../assets/l1.png";
-// import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+// import l3 from "../assets/l3.png";
+// import bg4 from "../assets/bg4.png";
+// import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 // const EnvironmentLandingPage = () => {
 //   return (
-//     <div className="flex flex-col items-center justify-center min-h-screen bg-white p-6 w-full relative overflow-hidden">
-//       {/* Glassmorphism circles */}
-//       <div className="absolute w-72 h-72 bg-[#318162] shadow-2xl shadow-[#232031] bg-opacity-20 backdrop-blur-lg rounded-full top-10 left-10"></div>
-//       <div className="absolute w-56 h-56 bg-[#318162]  shadow-2xl shadow-[#232031] bg-opacity-20 backdrop-blur-lg rounded-full top-1/3 right-20"></div>
-//       <div className="absolute w-64 h-64 bg-[#318162] shadow-2xl shadow-[#232031] bg-opacity-20 backdrop-blur-lg rounded-full bottom-10 left-1/3"></div>
-      
-//       <div className="w-full flex flex-col md:flex-row items-center justify-center min-h-[80vh] max-w-6xl mx-auto p-4 relative z-10">
-//         <div className="md:w-1/2 text-center md:text-left space-y-8 p-6">
-//           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-//             <span className="text-[#C5B2DC]">Dive </span>Into The Depths<br /> Of <span className="text-[#C5B2DC] text-5xl md:text-6xl">Virtual Reality</span>
+//     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 bg-cover bg-center w-full" style={{ backgroundImage: `url(${bg4})` }}>
+//       <div className="w-full flex flex-col md:flex-row  justify-center min-h-[80vh] mx-auto my-15 px-6">
+        
+//         {/* Text Section - Takes More Than Half Width */}
+//         <div className="w-full md:w-3/5 text-center md:text-left space-y-8 p-6">
+//           <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+//             Plants make a positive impact on your environment.
 //           </h1>
-//           <p className="text-gray-700 text-lg">
-//             Experience the limitless possibilities of Virtual Reality as you immerse yourself in breathtaking digital worlds. Dive deep into a realm where imagination meets innovation!
+//           <p className="text-gray-500 text-lg">
+//             Provide your house & office space with the right plants and let our plant care team keep them flourishing.
 //           </p>
 //           <button
-//             className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700"
-//             style={{
-//               background: "linear-gradient(to right, rgb(136,126,182),rgb(163,154,201))",
-//             }}
+//             className="bg-[#318162] font-bold shadow-[0px_0px_15px_5px_#318162] p-4 text-white px-6 py-3 rounded-full hover:bg-transparent hover:text-gray-700 mr-5"
 //           >
-//             BUILD YOUR WORLD
+//             Book Now
 //           </button>
+
+//           <button
+//             className=" font-bold border-none text-gray-700  px-6 py-3 rounded-full hover:bg-[#318162] hover:text-white shadow-[0px_0px_15px_5px_#318162]"
+          
+//           >
+//             Know More
+//           </button>
+//           <p className="text-gray-500 text-lg">
+//           You will get 30-days free trial.
+//           </p>
+//           <div className="flex justify-center md:justify-start space-x-6 mt-6">
+//         <a href="#" className="text-gray-700 hover:text-[#1877F2] text-2xl">
+//           <FaFacebookF />
+//         </a>
+//         <a href="#" className="text-gray-700 hover:text-[#E4405F] text-2xl">
+//           <FaInstagram />
+//         </a>
+//         <a href="#" className="text-gray-700 hover:text-[#1DA1F2] text-2xl">
+//           <FaTwitter />
+//         </a>
+//       </div>
 //         </div>
-//         <div className="md:w-1/2 flex justify-center p-4">
-//           <img 
-//             src={l1}
-//             alt="Landing Page" 
-//             className="rounded-lg shadow-lg max-w-full h-auto object-contain"
-//           />
+//         <div className="hidden md:flex flex-col items-end relative w-2/5">
+//           <div className="md:w-4/5">
+//             <img 
+//               src={l1}
+//               alt="Landing Page"  
+//               className="block ml-auto"
+//             />
+//           </div>
+//           <div className="md:w-4/5 mr-40">
+//             <img 
+//               src={l3}
+//               alt="Landing Page"  
+//               className="block ml-auto mt-[-5px]" 
+//             />
+//           </div>
 //         </div>
+
 //       </div>
 //     </div>
-//   );
+//   )
 // }
 
 // export default EnvironmentLandingPage;
 
-import React from 'react'
+
+import React from 'react';
 import l1 from "../assets/l1.png";
 import l3 from "../assets/l3.png";
 import bg4 from "../assets/bg4.png";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const EnvironmentLandingPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 bg-cover bg-center w-full" style={{ backgroundImage: `url(${bg4})` }}>
-      <div className="w-full flex flex-col md:flex-row items-center justify-center min-h-[80vh] max-w-6xl mx-auto p-4">
-        <div className="md:w-1/2 text-center md:text-left space-y-8 p-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-          Plants make a positive impact on your environment.
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 w-full relative overflow-hidden"
+      style={{ backgroundImage: `url(${bg4})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="w-full flex flex-col md:flex-row justify-between items-center mx-auto px-6 max-w-6xl">
+        
+        {/* Text Section - More than Half Width */}
+        <div className="w-full md:w-3/5 text-center md:text-left space-y-6 p-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+            Plants make a positive impact on your environment.
           </h1>
-          <p className="text-gray-500 text-lg">
-          Provide your house & office space with the right plants and let our plant care team keep them flourishing.
+          <p className="text-gray-500 text-md md:text-lg">
+            Provide your house & office space with the right plants and let our plant care team keep them flourishing.
           </p>
-          <button
-            className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700"
-            style={{
-              background: "linear-gradient(to right, rgb(136,126,182),rgb(163,154,201))",
-            }}
-          >
-            BUILD YOUR WORLD
-          </button>
+          
+          {/* Buttons */}
+          <div className="flex justify-center md:justify-start space-x-4">
+            <button className="bg-[#318162] font-bold shadow-md p-3 text-white rounded-full hover:bg-transparent hover:text-gray-700 border border-[#318162] transition">
+              Book Now
+            </button>
+            <button className="font-bold border border-[#318162] text-gray-700 p-3 rounded-full hover:bg-[#318162] hover:text-white transition">
+              Know More
+            </button>
+          </div>
+
+          <p className="text-gray-500 text-md">You will get a 30-day free trial.</p>
+
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-start space-x-6 mt-4">
+            <a href="#" className="text-gray-700 hover:text-[#1877F2] text-xl">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="text-gray-700 hover:text-[#E4405F] text-xl">
+              <FaInstagram />
+            </a>
+            <a href="#" className="text-gray-700 hover:text-[#1DA1F2] text-xl">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
-        <div className="md:w-1/2 flex justify-center p-4">
-          <img 
-            src={l1}
-            alt="Landing Page" 
-            className="rounded-lg shadow-lg max-w-full h-auto object-contain"
-          />
+
+        {/* Image Section - Adjusted to Fit Without Scroll */}
+        <div className="hidden md:flex flex-col items-end w-2/5 max-h-[70vh]">
+          <div className="w-full max-w-xs">
+            <img 
+              src={l1}
+              alt="Landing Page"
+              className="block ml-auto object-contain"
+            />
+          </div>
+          <div className="w-full max-w-xs mt-[-10px]">
+            <img 
+              src={l3}
+              alt="Landing Page"
+              className="block ml-auto object-contain"
+            />
+          </div>
         </div>
-        <div className="flex justify-center min-h-[20vh] max-w-5xl mx-auto p-4">
-          <img 
-            src={l3}
-            alt="Landing Page" 
-            className="rounded-lg shadow-lg max-w-full h-auto object-contain"
-          />
-        </div>
+
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
 export default EnvironmentLandingPage;
-
