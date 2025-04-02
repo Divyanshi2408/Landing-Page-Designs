@@ -2,6 +2,7 @@ import React from 'react'
 import TechnicalLandingPage from './Pages/TechnicalLandingPage'
 import EnvironmentLandingPage from './Pages/EnvironmentLandingPage'
 import GameLandingPage from './Pages/GameLandingPage'
+import AgencyLandingPage from './Pages/AgencyLandingPage'
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
     <EnvironmentLandingPage/>
     <div className='p-6'></div>
     <GameLandingPage/>
+    <div className='p-6'></div>
+    <AgencyLandingPage/>
     </div>
   )
 }
