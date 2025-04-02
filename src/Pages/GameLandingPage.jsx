@@ -17,32 +17,38 @@ const images = [
 export default function MetoshiLanding() {
   return (
     <div
-      className="relative min-h-screen bg-gradient-to-r from-purple-700 to-blue-900 text-white flex flex-col items-center justify-center p-6 overflow-hidden"
+      className="relative min-h-screen w-full bg-gradient-to-r from-purple-700 to-blue-900 text-white flex flex-col items-center justify-center p-4 sm:p-6 overflow-hidden"
       style={{
         backgroundImage: `url(${bg5})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="relative text-center max-w-5xl z-10">
-        <h1 className="text-9xl md:text-9xl font-bold relative inline-block">
-          <span className=" bg-white/10 backdrop-blur-lg border border-white/20 px-4 py-2 rounded-lg">Metoshi</span>
+      {/* Main Text */}
+      <div className="relative text-center max-w-4xl z-10">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold relative inline-block">
+          <span className=" bg-white/10 backdrop-blur-lg border border-white/20 px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
+            Metoshi
+          </span>
           <span className="text-gray-200"> is</span>
         </h1>
-        <h2 className="text-8xl md:text-8xl font-bold text-pink-500 mt-4 whitespace-nowrap">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-pink-500 mt-2 sm:mt-4 lg:mt-6 whitespace-nowrap ">
           Entertainment Platform
         </h2>
-        <p className="mt-4 text-gray-300">The white list is already open! Check it now</p>
-        <button className="mt-6 px-6 py-3 bg-white/10 backdrop-blur-lg border border-white/20 rounded-full text-lg font-semibold text-white shadow-lg hover:bg-white/20">
-            Get Whitelisted 🚀
-            </button>
-
+        <p className="mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl text-gray-300 px-2 sm:px-4">
+          The white list is already open! Check it now
+        </p>
+        <button className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg text-sm sm:text-lg md:text-xl font-semibold text-white shadow-lg hover:bg-white/20">
+          Get Whitelisted 🚀
+        </button>
       </div>
+
+      {/* Circular Images */}
       <div className="absolute inset-0 flex items-center justify-center">
         {images.map((img, index) => (
-            <div
+          <div
             key={index}
-            className={`absolute w-32 h-32 md:w-40 md:h-40 lg:w-50 lg:h-50 rounded-full border-4 border-white overflow-hidden shadow-lg ${img.className}`}
+            className={`absolute w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 2xl:w-64 2xl:h-64 rounded-full border-4 border-white overflow-hidden shadow-lg ${img.className}`}
           >
             <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
           </div>
@@ -51,3 +57,4 @@ export default function MetoshiLanding() {
     </div>
   );
 }
+
