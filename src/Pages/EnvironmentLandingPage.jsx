@@ -8,22 +8,22 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const EnvironmentLandingPage = () => {
   return (
     <div
-      className="flex flex-col item-center min-h-screen bg-gray-100 w-full relative overflow-hidden pt-10"
+      className="flex flex-col items-center min-h-screen bg-gray-100 w-full relative overflow-visible pt-10"
       style={{ backgroundImage: `url(${bg4})`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <motion.div 
         initial={{ opacity: 0, y: 50 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }}
-        className="w-full flex flex-col md:flex-row"
+        className="w-full flex flex-col md:flex-row px-4"
       >
         {/* Text Content */}
-        <div className="w-full md:w-3/5 text-center md:text-left space-y-6 p-4 ml-10 mt-10">
+        <div className="w-full md:w-3/5 text-center md:text-left space-y-6 p-4 md:p-8">
           <motion.h1
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-5xl font-bold text-gray-800 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-normal break-words max-w-full"
           >
             Plants make a positive impact on your environment.
           </motion.h1>
@@ -32,7 +32,7 @@ const EnvironmentLandingPage = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-gray-500 text-md md:text-lg"
+            className="text-sm sm:text-md md:text-lg text-gray-500 leading-relaxed max-w-full"
           >
             Provide your house & office space with the right plants and let our plant care team keep them flourishing.
           </motion.p>
@@ -42,7 +42,7 @@ const EnvironmentLandingPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex justify-center md:justify-start space-x-4"
+            className="flex flex-wrap justify-center md:justify-start gap-4"
           >
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -64,7 +64,7 @@ const EnvironmentLandingPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-gray-500 text-md"
+            className="text-sm sm:text-md text-gray-500 leading-relaxed"
           >
             You will get a 30-day free trial.
           </motion.p>
