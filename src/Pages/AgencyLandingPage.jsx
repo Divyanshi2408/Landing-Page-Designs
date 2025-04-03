@@ -6,7 +6,6 @@ import im4 from "../assets/im4.avif";
 import im5 from "../assets/im5.jpg";
 import im6 from "../assets/im6.jpg";
 import im7 from "../assets/im7.jpg";
-import bg4 from "../assets/bg4.png";
 import { FaLinkedin, FaEnvelope, FaDownload,FaYoutube, FaGithub  } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
