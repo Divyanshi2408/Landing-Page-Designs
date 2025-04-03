@@ -8,24 +8,25 @@ import i4 from "../assets/i4.png";
 import i5 from "../assets/i5.png"; 
 
 const images = [
-  { src: i1, alt: "Image 1", className: "top-[10px] left-45", delay: 0.1 },
+  { src: i1, alt: "Image 1", className: "top-[50px] left-45", delay: 0.1 },
   { src: i2, alt: "Image 2", className: "bottom-[15px] left-20", delay: 0.2 },
-  { src: i3, alt: "Image 3", className: "top-10 right-10", delay: 0.3 },
+  { src: i3, alt: "Image 3", className: "top-[110px] right-10", delay: 0.3 },
   { src: i4, alt: "Image 4", className: "bottom-0 right-1", delay: 0.4 },
   { src: i5, alt: "Image 5", className: "bottom-10 right-80", delay: 0.5 },
 ];
 
 export default function MetoshiLanding() {
+ 
+
   return (
     <div
-      className="relative min-h-screen w-full bg-gradient-to-r from-purple-700 to-blue-900 text-white flex flex-col items-center justify-center p-4 sm:p-6 overflow-hidden"
+      className="relative min-h-screen w-full bg-gradient-to-r from-purple-700 to-blue-900 text-white flex flex-col items-center justify-center pt-28 p-4 sm:p-6 overflow-hidden"
       style={{
         backgroundImage: `url(${bg5})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    >
-      {/* Text Section with Fade In */}
+    >  
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,7 +39,7 @@ export default function MetoshiLanding() {
           </span>
           <span className="text-gray-200"> is</span>
         </h1>
-        <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-pink-500 mt-2 sm:mt-4 lg:mt-6 whitespace-nowrap ">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-pink-500 mt-2 sm:mt-4 lg:mt-6 whitespace-nowrap">
           Entertainment Platform
         </h2>
         <p className="mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl text-gray-300 px-2 sm:px-4">
@@ -53,15 +54,15 @@ export default function MetoshiLanding() {
         </motion.button>
       </motion.div>
 
-      {/* Floating Images */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      {/* Floating Images (Fixed Positioning) */}
+      <div className="absolute inset-0 flex items-center justify-center pt-28">
         {images.map((img, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: img.delay }}
-            className={`absolute w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 2xl:w-64 2xl:h-64 rounded-full border-4 border-white overflow-hidden shadow-lg ${img.className}`}
+            className={`absolute w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 2xl:w-64 2xl:h-64 rounded-full border-4 border-white overflow-hidden shadow-lg ${img.className} z-30`}
           >
             <motion.img
               src={img.src}

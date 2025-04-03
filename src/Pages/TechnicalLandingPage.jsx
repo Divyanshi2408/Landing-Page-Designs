@@ -7,7 +7,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const TechnicalLandingPage = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-100 bg-cover bg-center w-full"
+      className="flex flex-col items-center justify-center min-h-screen bg-gray-100 bg-cover bg-center w-full pt-10"
       style={{ backgroundImage: `url(${bg1})` }}
     >
       {/* Hero Section */}
