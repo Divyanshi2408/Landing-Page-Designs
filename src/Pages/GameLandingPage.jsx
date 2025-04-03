@@ -24,7 +24,7 @@ export default function MetoshiLanding() {
         backgroundPosition: "center",
       }}
     >
-      {/* Main Text */}
+
       <div className="relative text-center max-w-4xl z-10">
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold relative inline-block">
           <span className=" bg-white/10 backdrop-blur-lg border border-white/20 px-2 sm:px-4 py-1 sm:py-2 rounded-lg">
@@ -43,7 +43,6 @@ export default function MetoshiLanding() {
         </button>
       </div>
 
-      {/* Circular Images */}
       <div className="absolute inset-0 flex items-center justify-center">
         {images.map((img, index) => (
           <div
