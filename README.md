@@ -2,7 +2,7 @@
 
 This repository contains landing pages built using **React, Framer Motion, and Tailwind CSS**. Each page is designed to be **responsive, modern, and interactive**, with smooth animations for an enhanced user experience.  
 
-## Preview 
+## 📸 Screenshots
 ![Image](https://github.com/user-attachments/assets/b02f1b77-0d7a-4e53-b8a6-3f60967d4898)
 ![Image](https://github.com/user-attachments/assets/28dd1bf3-8d03-47eb-84bc-5407538f70aa)
 ![Image](https://github.com/user-attachments/assets/76ac288b-5ae3-4a0c-98bf-3813f904515b)
@@ -22,4 +22,17 @@ This repository contains landing pages built using **React, Framer Motion, and T
 1. **Clone the repository:**  
    ```sh
    git clone https://github.com/Divyanshi2408/Landing-Page-Designs.git
+   cd Landing-Page-Designs
    ```
+2. **Install dependencies:**
+   ```
+   npm install
+   ```
+3. **Start the development server:**
+   ```
+   npm run dev
+   ```
+   ## 💡 Feedback & Contributions  
+   Feel free to **fork** this repository, create a **pull request**, or open an **issue** for suggestions or improvements.  
+
+
